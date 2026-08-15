@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 34
+
+    namespace "tv.bilibili.ijkplayer.so"
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 34
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            //shrinkResources true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation libs.appcompat.v7
+    testImplementation libs.junit
+    androidTestImplementation libs.runner
+    androidTestImplementation libs.espresso.core
+}
