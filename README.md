@@ -1,12 +1,10 @@
-> **本仓库为 SpaceXC/Re-WearBili 的个人定制分支(修改日期: 2026-08-15), 修改内容:**
->
-> - 全局主题色响应式(`BilibiliPink`), 应用内全部 UI 跟随自定义主题色
-> - 播放器: 默认软解、硬解渲染超时降级(慢网不误判)、黑屏修复、播放/暂停图标响应式
-> - 直播: 菜单入口 + 首页第 4 页、直播间搜索、推荐直播间列表
-> - 搜索: 结果页可改词并写入历史、视频/直播胶囊滑块
-> - `libs/Bilibili-Kotlin-SDK` 由子模块转为仓库内普通源码(克隆后可直接构建)
->
-> 本项目遵循 **GNU General Public License v3.0**, 原作者版权声明均已保留。
+## 本项目是基于 [Re-WearBili](https://github.com/SpaceXC/Re-WearBili) 的修改维护版
+
+- 原项目作者：XC-Qan（SpaceXC），原项目地址：https://github.com/SpaceXC/Re-WearBili
+- 本分支/本仓库的修改内容：
+  - **修复的 Bug**：视频播放黑屏（默认软解、硬解渲染超时自动降级且慢网络不误判）、"Placement happened before lookahead" 崩溃、实验性功能 banner 尺寸不贴合、直播封面加载失败与标题残留高亮标签、播放/暂停图标不随状态切换
+  - **新增功能**：全局主题色（应用内全部 UI 跟随自定义主题色）、直播（菜单入口、直播间搜索、推荐直播间列表、直播播放）、搜索优化（结果页可改词并写入历史、视频/直播胶囊滑块）、`libs/Bilibili-Kotlin-SDK` 由子模块转为仓库内普通源码（克隆后可直接构建）
+- 本项目遵循 GPL-3.0 协议，原版权归原作者所有，修改部分版权归修改者所有。
 
 <p align="center">
     <img src="https://repository-images.githubusercontent.com/625249285/2ce9fdfe-9ad8-46ec-9442-bfa69f268be1">
